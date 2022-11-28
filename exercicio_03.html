@@ -8,15 +8,19 @@
 </head>
 <body>
     <h1>Somas em Loop</h1>
-    <div id="LoopFinal"></div>
+    <span>3 (soma do número 1 com o numero 2)</span></br>
+    <span id="LoopFinal"></span>
 
     <script>
-        let soma = "";
-        for (let i=0; i < array.length; i++) {
-            
-             }
+        let soma = 3;
+        let numero = "";
 
+        for (let i=3; i <= 10; i++) {
 
+            soma += i; 
+            numero += soma + "(soma parcial com o número" + i + ") </br>";
+            document.getElementById("LoopFinal").innerHTML = numero
+        }
     </script>
 </body>
 </html>
